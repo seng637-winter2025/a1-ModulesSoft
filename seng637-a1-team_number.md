@@ -103,5 +103,6 @@ We learned to collaborate effectively and also make proper bug reports from the 
 
 # Comments/feedback on the lab and lab document itself
 
-please shorten the problem description with more clarity.
+Please shorten the problem description with more clarity.
+
 It would be more practical if assignments could include practical testing with unit tests, security checks, and automation for hands-on experience, though we recognize time constraints.
