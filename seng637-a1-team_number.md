@@ -44,48 +44,45 @@ The exploratory testing plan focuses on dynamically investigating the Gordon Col
 | **Test Case Design**  | No predefined test cases; testers create and adapt tests on the fly. | Predefined test cases based on requirements and specifications. |
 | **Flexibility**       | Highly flexible, allowing testers to investigate issues as they arise. | Less flexible, as tests follow a structured plan. |
 | **Documentation**     | Test documentation is created dynamically based on observations. | Test cases, results, and defect reports are documented in advance. |
-| **Best Suited For**   | Identifying unknown issues, usability testing, and early-stage testing. | Ensuring compliance with functional requirements and regression testing. |
-| **Skills Required**   | Requires experience, domain knowledge, and critical thinking skills. | Requires knowledge of functional requirements and test execution skills. |
-| **Testing Approach**  | Unscripted, exploratory, and adaptive. | Structured, scripted, and follows a predefined test plan. |
-| **Test Execution**    | Conducted in real time with minimal preparation. | Follows a structured execution based on test cases. |
-| **Defect Discovery**  | Effective in identifying hidden defects and unexpected issues. | Ensures expected functionality works as intended, but may miss edge cases. |
+
 
 Both exploratory and manual functional testing have their strengths and limitations. Exploratory testing is more effective in uncovering unexpected issues but requires skilled testers and lacks structured documentation. Manual functional testing ensures systematic verification of requirements but may be slower and miss unforeseen defects. A balanced approach combining both can maximize test coverage and software quality.
 
 # Scope of Testing
 
-The scope of testing for this ATM system includes verifying core functionalities, user interactions, and error handling.
+The scope of testing for this ATM system includes verifying authentication, transaction functionalities, receipt generation, logging, user interactions, and error handling.
 
 Features to be tested:
 
-1. **System Startup & Shutdown**: Ensures the ATM starts up correctly, accepts initial cash input, and establishes a connection with the bank. Verifies that the system shuts down properly when the power switch is turned off.
+1. **System Startup & Shutdown**: Ensuring the ATM starts up correctly, accepts initial cash bills input by the operator, and establishes a connection with the bank (server). Verifying that the system shuts down properly when the power switch is turned off and the machine is not being used.
 
-2. **Session Management**: Validates the ATM's ability to read valid ATM cards and reject unreadable ones. Ensures secure authentication by handling PIN input and verifying correctness. Supports multiple transactions within a single session and proper session termination.
+2. **Session Management**: Validating the ATM's ability to read valid ATM cards and reject unreadable ones. Ensuring secure authentication by handling PIN input and verifying correctness. Supporting multiple transactions within a single session and the ability to cancel transaction at anytime and going back to the main menu.
 
 3. **Transaction Processing**  
-   - **Withdrawals**: Checks proper account selection, cash dispensing, balance verification, and handling of insufficient funds.  
-   - **Deposits**: Verifies deposit acceptance, envelope handling, transaction logging, and cancellation scenarios.  
-   - **Transfers**: Confirms accurate fund transfers between accounts, validation of transfer amounts, and transaction logging.  
-   - **Inquiries**: Ensures accurate balance inquiries and transaction logs.
+   - **Withdrawals**: Checking proper account selection, cash dispensing, balance verification, and handling of insufficient funds.  
+   - **Deposits**: Verifying deposit acceptance, envelope handling, transaction logging, and cancellation scenarios.  
+   - **Transfers**: Confirming accurate fund transfers between accounts, validation of transfer amounts, and transaction logging.  
 
 4. **Error Handling & Security**: Handles invalid PIN attempts with retry limits and appropriate messaging. Ensures proper cancellation of transactions at different stages. Validates system responses when cash or funds are insufficient.
 
 Features not to be tested:
-1. **Hardware Failures**: The test cases do not cover failures such as card reader malfunctions or printer issues.
-2. **Network Failures**: The test plan assumes a stable connection to the bank and does not include network outage scenarios.
-3. **Security Attacks**: No penetration testing or fraud detection is included in this scope.
+1. **Hardware Failures**: The test cases do not cover failures such as card reader malfunctions, bill deposits verification, or printer issues.
+2. **Security**: No penetration testing or fraud detection is included in this scope.
+3. **Storing Data**: Long term data storage on the disk is not covered.
+4. **Transfer Between 2 users**: Transactions between two different users are not covered.
 
 This structured approach ensures that the ATM system operates reliably, meets functional requirements, and provides a seamless user experience.
 
 # Test Logistics
 
-1. **Who will test?**  
-   For the test logistics, each team member was assigned specific functionalities to ensure comprehensive coverage and efficient execution. Yousef was responsible for testing core ATM operations, including system startup and shutdown, session management, and authentication processes such as card reading and PIN verification. Riley focused on transaction-related functionalities, including withdrawals, deposits, transfers, and balance inquiries, ensuring that each operation was processed correctly and logged accurately. Both team members collaborated on error handling scenarios, such as invalid PIN attempts and transaction cancellations, to validate system security and reliability. This structured division of responsibilities ensured that all functionalities were thoroughly tested while maintaining efficiency and accuracy in reporting.
+1. **Who will test?**
 
-3. **When will test occur?**  
+   In a real-world software project, testing involves unit tests, security assessments, and structured QA processes. However, since our assignment did not include unit testing or security measures, we approached testing as a group of two using exploratory and manual testing. We actively interacted with the software, testing different inputs, edge cases, and possible failure points without writing test codes.
+
+4. **When will test occur?**  
    The testers will start the test execution when the following inputs are ready:  
    - Software v1.0 and v1.1 are available for testing  
-   - Test Specification is created  
+   - Test cases are documented  
    - Enough human resource for testing
 
 # Notes and discussion of the peer reviews of defect reports
@@ -94,7 +91,7 @@ During the peer review of defect reports, the team focused on ensuring clarity i
 
 # How the pair testing was managed and team work/effort was divided
 
-In this pair testing approach, Yousef and Riley collaborated to ensure an efficient and well-documented testing process. Yousef was responsible for executing the test instructions on the application, interacting with the system, and identifying any issues or unexpected behaviors. Meanwhile, Riley focused on updating the report in real time, documenting test results, noting any defects, and ensuring all observations were accurately recorded. This division of work allowed for a streamlined process where both team members could focus on their respective tasks without distractions, leading to more thorough testing and precise documentation. Their teamwork ensured that any issues were captured and documented.
+In this pair testing approach, Yousef and Riley collaborated to ensure an efficient and well-documented testing process. Yousef was responsible for executing the test instructions on the application, interacting with the system, and identifying any issues or unexpected behaviors. Meanwhile, Riley focused on updating the report in real time, documenting test results, noting any defects, and ensuring all observations were accurately recorded.
 
 # Difficulties encountered, challenges overcome, and lessons learned
 
@@ -102,4 +99,5 @@ During the peer review of defect reports, the team noted that in some cases, the
 
 # Comments/feedback on the lab and lab document itself
 
-Shorten the problem description, please.
+please shorten the problem description with more clarity.
+It would be more practical if assignments could include practical testing with unit tests, security checks, and automation for hands-on experience, though we recognize time constraints.
