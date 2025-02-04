@@ -36,14 +36,15 @@ The exploratory testing plan focuses on dynamically investigating the Gordon Col
 
 | Perspective            | Exploratory Testing                                    | Manual Functional Testing                              |
 |------------------------|---------------------------------------------------------|--------------------------------------------------------|
-| **Definition**         | A dynamic testing approach where testers explore the application without predefined test cases. | A structured testing approach where testers execute predefined test cases to verify functionality. |
-| **Benefits**          | Uncovers unexpected defects, provides real-time feedback, and enhances creativity in testing. | Ensures system functionality aligns with requirements, provides repeatability, and facilitates regression testing. |
-| **Tradeoffs**         | Lack of predefined structure may result in inconsistent coverage; relies heavily on tester expertise. | Can be time-consuming and may miss issues outside the predefined test cases. |
-| **Effectiveness**     | Highly effective for finding unknown defects, usability issues, and edge cases. | Effective in verifying that expected functionality works as specified, but may overlook unexpected issues. |
-| **Efficiency**        | Faster in identifying critical issues but may require repeated testing due to lack of documentation. | Systematic and structured, but may be slower due to predefined test execution steps. |
-| **Test Case Design**  | No predefined test cases; testers create and adapt tests on the fly. | Predefined test cases based on requirements and specifications. |
-| **Flexibility**       | Highly flexible, allowing testers to investigate issues as they arise. | Less flexible, as tests follow a structured plan. |
-| **Documentation**     | Test documentation is created dynamically based on observations. | Test cases, results, and defect reports are documented in advance. |
+| **Definition**         | Dynamic testing approach where testers explore the application without written test cases. | Structured testing approach, testers execute predefined test cases. |
+| **Benefits**          | Finds unexpected defects, provides real-time feedback when testing. | Ensures functionalities align with requirements. |
+| **Tradeoffs**         | Lack of predefined structure may result in incomprehensive coverage. It also relies heavily on tester expertise. | May miss 
+ some issues not included in the predefined test cases. |
+| **Effectiveness**     | Good for finding unknown defects, user experience issues. | Effective in verifying expected functionality works as specified, but may overlook unexpected issues. |
+| **Efficiency**        | It relies heavily on the tester's experience. | May be slower due to predefined test execution steps. |
+| **Test Case Design**  | Testers create and adapt tests on the fly. | Predefined test cases based on requirements and specifications. |
+| **Flexibility**       | Highly flexible | Less flexible |
+| **Documentation**     | Test documentation is created based on observations. | Test cases, results, and expectations report are documented in advance. |
 
 
 Both exploratory and manual functional testing have their strengths and limitations. Exploratory testing is more effective in uncovering unexpected issues but requires skilled testers and lacks structured documentation. Manual functional testing ensures systematic verification of requirements but may be slower and miss unforeseen defects. A balanced approach combining both can maximize test coverage and software quality.
