@@ -58,12 +58,12 @@ Features to be tested:
 
 2. **Session Management**: Validating the ATM's ability to read valid ATM cards and reject unreadable ones. Ensuring secure authentication by handling PIN input and verifying correctness. Supporting multiple transactions within a single session and the ability to cancel transaction at anytime and going back to the main menu.
 
-3. **Transaction Processing**  
+3. **Transaction Processing**:  
    - **Withdrawals**: Checking proper account selection, cash dispensing, balance verification, and handling of insufficient funds.  
    - **Deposits**: Verifying deposit acceptance, envelope handling, transaction logging, and cancellation scenarios.  
    - **Transfers**: Confirming accurate fund transfers between accounts, validation of transfer amounts, and transaction logging.  
 
-4. **Error Handling & Security**: Handles invalid PIN attempts with retry limits and appropriate messaging. Ensures proper cancellation of transactions at different stages. Validates system responses when cash or funds are insufficient.
+4. **Error Handling & Security**: Handling invalid PIN attempts with retry limits and appropriate messaging. Ensuring proper cancellation of transactions at different stages. Validating system responses when cash or funds are insufficient.
 
 Features not to be tested:
 1. **Hardware Failures**: The test cases do not cover failures such as card reader malfunctions, bill deposits verification, or printer issues.
