@@ -91,11 +91,15 @@ During the peer review of defect reports, the team focused on ensuring clarity i
 
 # How the pair testing was managed and team work/effort was divided
 
-In this pair testing approach, Yousef and Riley collaborated to ensure an efficient and well-documented testing process. Yousef was responsible for executing the test instructions on the application, interacting with the system, and identifying any issues or unexpected behaviors. Meanwhile, Riley focused on updating the report in real time, documenting test results, noting any defects, and ensuring all observations were accurately recorded.
+In this pair-testing approach, Yousef and Riley collaborated to ensure an efficient and well-documented testing process. For the first section, Yousef was responsible for executing the test instructions for the application and creating the exploratory test plan. Riley also contributed to the exploratory test pan and documented the results, noting any found defects. For the second part of the assignment, Riley and Yousef swapped back and forth testing the application and also giving insights about what to test.
 
 # Difficulties encountered, challenges overcome, and lessons learned
 
-During the peer review of defect reports, the team noted that in some cases, the issue was not aligned with the expected outcome. For instance, when testing whether the receipt was printed correctly for a transaction, the receipt itself was fine, but the card number displayed was incorrect. These kinds of discrepancies led to deeper discussions about the actual issues and helped ensure that defect reports accurately reflected the true problem. The team also emphasized the importance of checking for unexpected issues that might not be part of the initial test case.
+ One of the difficulties we encountered was understanding the exact system requirements. An example of this was the internal logs of the ATM being connected to the bank. We were not sure what this log was supposed to look like and assumed it was not working. Another challenge was knowing if we should mark a bug defect for a test case that did not involve a bug. An example of this was when we tested if the receipt was being printed correctly with the correct transaction information. While everything appeared to be okay the only issue was the card number. Since there was another test in which we reported the card number was a bug, we did not know whether or not to mark this one as also a bug.
+
+One challenge we had to overcome was understanding Jira. It seemed confusing and mundane to report bugs using this software. We had issues with the template and even when changing it, we could not create all the required column names. To overcome this we eventually transferred everything to an Excel sheet ourselves. Another challenge was understanding the system requirements as stated above. To overcome this we had to assume what the requirements were asking of us, which in a real-world situation we would ask further questions about the requirements. 
+
+We learned to collaborate effectively and also make proper bug reports from the beginning. All the discrepancies we faced led to further discussions about the actual issues and helped us ensure that defect reports accurately reflected the true problem.
 
 # Comments/feedback on the lab and lab document itself
 
